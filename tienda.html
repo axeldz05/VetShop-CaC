@@ -56,57 +56,31 @@
                 <img class="plate" src="Assets/logovetshop.png" alt="perro">
                 <div class="plate-circle"></div>
             </div>
-            <div class="hero-content">
-                <h2 class="hero-title text-serif">¡Porque cada pata merece atención de primera!</h2>
-                <button class="hero-button">Reserva tu turno</button>
-            </div>
         </section>
-        <section class="features">
-            <div class="features-wrapper">
-                <div class="feature">
-                    <h4 class="text-serif feature-title">Cuidando de tu mas fiel amigo!</h4>
-                    <p>En Peluditos, nuestro compromiso es proporcionar la mejor atención y cuidado para tus mascotas. Nuestro equipo de veterinarios altamente calificados y amantes de los animales está dedicado a garantizar la salud y el bienestar de tus compañeros peludos. Desde exámenes de rutina hasta tratamientos especializados, estamos aquí para brindar el más alto nivel de atención médica y cariño a cada uno de nuestros pacientes. En Peluditos, no solo cuidamos a los animales, también cuidamos a las familias que los aman. Confía en nosotros para mantener a tus mascotas felices y saludables durante toda su vida.</p>
-                    <img src="Assets/image1.jpg" alt="">
+        <section class="products">
+            <div class="products-wrapper">
+                <div class="product">
+                    <img src="Assets/food-for-dog.jpg" alt="">
+                    <div class="product-title">Comida para Perro</div>
+                    <div class="product-price">9.99</div>
+                    <button class="product-add-to-cart"></button>
+                </div>
+                <div class="product">
+                    <img src="Assets/food-for-cat.jpg" alt="">
+                    <div class="product-title">Comida para Gatos</div>
+                    <div class="product-price">9.99</div>
+                    <button class="product-add-to-cart"></button>
+                </div>
+                <div class="product">
+                    <img src="Assets/cepillo-para-mascotas.jpg" alt="">
+                    <div class="product-title">Cepillo Guante para Mascotas</div>
+                    <div class="product-price">9.99</div>
+                    <button class="product-add-to-cart"></button>
                 </div>
             </div>
         </section>
 
-    
-           <!-- Formulario de turnos (inicialmente oculto) -->
-       <!-- Formulario de turnos oculto -->
-    <section id="turnos-form" style="display: none;">
-        <h3>Reserva tu turno</h3>
-        <form id="turno-formulario">
-            <!-- Campos del formulario -->
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
-
-            <label for="nombreMascota">Nombre de la mascota:</label>
-            <input type="text" id="nombreMascota" name="nombreMascota" required>
-
-            <label for="telefono">Teléfono de contacto:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-
-            <!-- Lista de fechas y horas disponibles -->
-            <label for="selectDia">Selecciona un día:</label>
-                <select id="selectDia">
-                    <option value="Lunes">Lunes</option>
-                    <option value="Martes">Martes</option>
-                    <option value="Miércoles">Miércoles</option>
-                    <option value="Jueves">Jueves</option>
-                    <option value="Viernes">Viernes</option>
-                </select>
-            <fieldset>
-                <legend>Fecha y hora:</legend>
-                <!-- Aquí se generarán dinámicamente las opciones de fecha y hora con JavaScript -->
-            </fieldset>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    </main>
     <footer class="footer">
         <img class="footer-floating" src="Assets/slider_perro_gato.png" alt="">
         <div class="footer-circle"></div>
@@ -118,11 +92,7 @@
             <p>Developed by Codo a Codo - Team 4</p>
         </div>
     </footer>
-
-    </main>
-    
     <script src="JS/menu.js" ></script>
-    <script src="JS/botonform.js" ></script>
     <script src="JS/clima.js" ></script>
     
 </body>
