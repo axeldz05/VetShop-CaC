@@ -1,5 +1,8 @@
 .products {
     margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .product{
     display: flex;
@@ -65,3 +68,12 @@
     gap: 2rem;
 }
 
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
