@@ -2,6 +2,12 @@
     margin-top: 0;
     background-color: white;
 }
+#features-carousel {
+    margin-top: 0;
+    text-align: center;
+    max-width: 650px;
+    max-height: 325px;
+}
 
 .feature {
     text-align: center;
@@ -19,7 +25,6 @@
 .feature-title {
     font-size: 2rem;
     margin-bottom: 0;
-
 }
 
 .feature > p {
@@ -35,6 +40,7 @@
 .features-wrapper {
     display: flex;
     flex-direction: column;
+    justify-items: center;
     gap: 2rem;
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,11 @@
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="contenedorclima">
         <div id="caja1">
@@ -52,7 +55,7 @@
             <img src="Assets/hero_left.png" alt="ovejeroaleman" class="left-floating">
             <img src="Assets/hero_right.png" alt="Gatito" class="right-floating">
             <div class="plate-wrapper">
-                
+
                 <img class="plate" src="Assets/logovetshop.png" alt="perro">
                 <div class="plate-circle"></div>
             </div>
@@ -63,35 +66,69 @@
         </section>
         <section class="features">
             <div class="features-wrapper">
+                <div id="features-carousel" class="carousel slide feature">
+                    <!-- <ol class="carousel-indicators">
+                        <li data-target="#features-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#features-carousel" data-slide-to="1"></li>
+                        <li data-target="#features-carousel" data-slide-to="2"></li>
+                    </ol>
+                   -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Assets/image1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/image2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/image3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#features-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#features-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
                 <div class="feature">
                     <h4 class="text-serif feature-title">Cuidando de tu mas fiel amigo!</h4>
-                    <p>En Peluditos, nuestro compromiso es proporcionar la mejor atención y cuidado para tus mascotas. Nuestro equipo de veterinarios altamente calificados y amantes de los animales está dedicado a garantizar la salud y el bienestar de tus compañeros peludos. Desde exámenes de rutina hasta tratamientos especializados, estamos aquí para brindar el más alto nivel de atención médica y cariño a cada uno de nuestros pacientes. En Peluditos, no solo cuidamos a los animales, también cuidamos a las familias que los aman. Confía en nosotros para mantener a tus mascotas felices y saludables durante toda su vida.</p>
-                    <img src="Assets/image1.jpg" alt="">
+                    <p>En Peluditos, nuestro compromiso es proporcionar la mejor atención y cuidado para tus mascotas.
+                        Nuestro equipo de veterinarios altamente calificados y amantes de los animales está dedicado a
+                        garantizar la salud y el bienestar de tus compañeros peludos. Desde exámenes de rutina hasta
+                        tratamientos especializados, estamos aquí para brindar el más alto nivel de atención médica y
+                        cariño a cada uno de nuestros pacientes. En Peluditos, no solo cuidamos a los animales, también
+                        cuidamos a las familias que los aman. Confía en nosotros para mantener a tus mascotas felices y
+                        saludables durante toda su vida.</p>
                 </div>
             </div>
         </section>
 
-    
-           <!-- Formulario de turnos (inicialmente oculto) -->
-       <!-- Formulario de turnos oculto -->
-    <section id="turnos-form" style="display: none;">
-        <h3>Reserva tu turno</h3>
-        <form id="turno-formulario">
-            <!-- Campos del formulario -->
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
 
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
+        <!-- Formulario de turnos (inicialmente oculto) -->
+        <!-- Formulario de turnos oculto -->
+        <section id="turnos-form" style="display: none;">
+            <h3>Reserva tu turno</h3>
+            <form id="turno-formulario">
+                <!-- Campos del formulario -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-            <label for="nombreMascota">Nombre de la mascota:</label>
-            <input type="text" id="nombreMascota" name="nombreMascota" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
 
-            <label for="telefono">Teléfono de contacto:</label>
-            <input type="tel" id="telefono" name="telefono" required>
+                <label for="nombreMascota">Nombre de la mascota:</label>
+                <input type="text" id="nombreMascota" name="nombreMascota" required>
 
-            <!-- Lista de fechas y horas disponibles -->
-            <label for="selectDia">Selecciona un día:</label>
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <!-- Lista de fechas y horas disponibles -->
+                <label for="selectDia">Selecciona un día:</label>
                 <select id="selectDia">
                     <option value="Lunes">Lunes</option>
                     <option value="Martes">Martes</option>
@@ -99,31 +136,35 @@
                     <option value="Jueves">Jueves</option>
                     <option value="Viernes">Viernes</option>
                 </select>
-            <fieldset>
-                <legend>Fecha y hora:</legend>
-                <!-- Aquí se generarán dinámicamente las opciones de fecha y hora con JavaScript -->
-            </fieldset>
+                <fieldset>
+                    <legend>Fecha y hora:</legend>
+                    <!-- Aquí se generarán dinámicamente las opciones de fecha y hora con JavaScript -->
+                </fieldset>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    <footer class="footer">
-        <img class="footer-floating" src="Assets/slider_perro_gato.png" alt="">
-        <div class="footer-circle"></div>
-        <div class="logo-footer">
-            <img src="Assets/logovetshop.png" alt="">
-        </div>
-        <div class="copyright">
-            <p>© copyright 2024 - Peluditos Vet-Shop</p>
-            <p>Developed by Codo a Codo - Team 4</p>
-        </div>
-    </footer>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <footer class="footer">
+            <img class="footer-floating" src="Assets/slider_perro_gato.png" alt="">
+            <div class="footer-circle"></div>
+            <div class="logo-footer">
+                <img src="Assets/logovetshop.png" alt="">
+            </div>
+            <div class="copyright">
+                <p>© copyright 2024 - Peluditos Vet-Shop</p>
+                <p>Developed by Codo a Codo - Team 4</p>
+            </div>
+        </footer>
 
     </main>
-    
-    <script src="JS/menu.js" ></script>
-    <script src="JS/botonform.js" ></script>
-    <script src="JS/clima.js" ></script>
-    
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/botonform.js"></script>
+    <script src="JS/clima.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
