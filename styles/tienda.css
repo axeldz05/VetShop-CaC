@@ -77,3 +77,20 @@
   white-space: nowrap;
   width: 1px;
 }
+
+
+.products > div.pagination > button{
+    background: white;
+    border: none;
+    color: #70AC45;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.products > div.pagination > button:focus{
+    font-weight: 800;
+}
+
+#filtro{
+    margin-bottom: 2rem;
+}

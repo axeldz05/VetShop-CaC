@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peluditos Vet-Shop</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,24 +31,25 @@
     </div>
     <header>
         <nav class="navbar">
-            <div class="actions">
-                <img id="menu-icon" src="Assets/icons/menu.svg" alt="boton de menu">
-                <div class="menu-container">
-                    <div class="menu-dropdown" id="menuDropdown">
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="quienessomos.html">Quiénes Somos</a></li>
-                            <li><a href="tienda.html">Tienda</a></li>
-                            <li><a href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
-                            <li><a href="https://twitter.com/">Twitter</a></li>
-                            <li><a href="https://www.instagram.com/">Instagram</a></li>
-                            <li><a href="https://github.com/AdrianC89">GitHub</a></li>
-                        </ul>
-                    </div>
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="menu-items" id="navbarMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://github.com/AdrianC89">GitHub</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <img src="Assets/icons/menu.svg" alt="Botón de menú" id="menuIcon">
                 </div>
             </div>
         </nav>
-    </header>
+    </header>    
     <main>
         <section class="hero">
             <img src="Assets/hero_left.png" alt="ovejeroaleman" class="left-floating">
@@ -58,8 +61,17 @@
             </div>
         </section>
         <section class="products">
+            <div id="filtro">
+                <label for="categoria">Filtrar por categoría:</label>
+                <select id="categoria">
+                    <option value="todos">Todos</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="insumos">Insumos</option>
+                </select>
+            </div>
             <div class="products-wrapper">
-                <div class="product hidden">
+                <div class="product hidden" data-categoria="perro">
                     <img src="Assets/food-for-dog.jpg" alt="">
                     <div class="product-body">
                         <div class="product-title">Comida para Perro</div>
@@ -67,7 +79,7 @@
                     </div>
                     <button class="product-add-to-cart"></button>
                 </div>
-                <div class="product hidden">
+                <div class="product hidden" data-categoria="gato">
                     <img src="Assets/food-for-cat.jpg" alt="">
                     <div class="product-body">
                         <div class="product-title">Comida para Gatos</div>
@@ -75,7 +87,7 @@
                         <button class="product-add-to-cart"></button>
                     </div>
                 </div>
-                <div class="product hidden">
+                <div class="product hidden"  data-categoria="insumos">
                     <img src="Assets/cepillo-para-mascotas.jpg" alt="">
                     <div class="product-body">
                         <div class="product-title">Cepillo Guante para Mascotas</div>
@@ -83,51 +95,51 @@
                     </div>
                     <button class="product-add-to-cart"></button>
                 </div>
-                <div class="product hidden">
-                    <img src="..." alt="...">
+                <div class="product hidden"  data-categoria="perro">
+                    <img src="Assets/images.png" alt="casa">
                     <div class="product-body">
-                        <div class="product-title">Titulo del producto</div>
-                        <div class="product-price">Precio del producto</div>
+                        <div class="product-title">Casa para perro</div>
+                        <div class="product-price">100</div>
                         <button class="product-add-to-cart"></button>
                     </div>
                 </div>
-                <div class="product hidden">
-                    <img src="..." alt="...">
+                <div class="product hidden" data-categoria="gato">
+                    <img src="Assets/casagato.jpg" alt="casa">
                     <div class="product-body">
-                        <div class="product-title">Titulo del producto</div>
-                        <div class="product-price">Precio del producto</div>
+                        <div class="product-title">Casa para gato</div>
+                        <div class="product-price">100</div>
                         <button class="product-add-to-cart"></button>
                     </div>
                 </div>
-                <div class="product hidden">
-                    <img src="..." alt="...">
+                <div class="product hidden" data-categoria="insumos">
+                    <img src="Assets/cepilloUno.jpg" alt="cepillo">
                     <div class="product-body">
-                        <div class="product-title">Titulo del producto</div>
-                        <div class="product-price">Precio del producto</div>
+                        <div class="product-title">cepillo para el pelo rojo</div>
+                        <div class="product-price">5.99</div>
                         <button class="product-add-to-cart"></button>
                     </div>
                 </div>
-                <div class="product hidden">
-                    <img src="..." alt="...">
+                <div class="product hidden" data-categoria="insumos">
+                    <img src="Assets/plato.jpg" alt="plato">
                     <div class="product-body">
-                        <div class="product-title">Titulo del producto</div>
-                        <div class="product-price">Precio del producto</div>
+                        <div class="product-title">plato para mascota</div>
+                        <div class="product-price">5.99</div>
                         <button class="product-add-to-cart"></button>
                     </div>
                 </div>
-                <div class="product hidden">
-                    <img src="..." alt="...">
+                <div class="product hidden" data-categoria="perro">
+                    <img src="Assets/collar-perro.jpg" alt="collar">
                     <div class="product-body">
-                        <div class="product-title">Titulo del producto</div>
-                        <div class="product-price">Precio del producto</div>
+                        <div class="product-title">collar para gato</div>
+                        <div class="product-price">8.99</div>
                         <button class="product-add-to-cart"></button>
                     </div>
                 </div>
-                <div class="product hidden">
-                    <img src="..." alt="...">
+                <div class="product hidden" data-categoria="gato">
+                    <img src="Assets/collar.jpg" alt="collar">
                     <div class="product-body">
-                        <div class="product-title">Titulo del producto</div>
-                        <div class="product-price">Precio del producto</div>
+                        <div class="product-title">collar para gato</div>
+                        <div class="product-price">8.99</div>
                         <button class="product-add-to-cart"></button>
                     </div>
                 </div>
