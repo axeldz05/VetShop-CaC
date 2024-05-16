@@ -43,10 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function filtrarProductos(categoria) {
-    // Obtener todos los productos
     var productos = document.querySelectorAll('.product');
 
-    // Mostrar u ocultar productos según la categoría seleccionada
     productos.forEach(function(producto) {
         var categoriaProducto = producto.getAttribute('data-categoria');
         if (categoria === 'todos' || categoriaProducto === categoria) {
@@ -57,11 +55,9 @@ function filtrarProductos(categoria) {
     });
 }
 
-// Escuchar cambios en el selector de categoría
 document.getElementById('categoria').addEventListener('change', function() {
     var categoriaSeleccionada = this.value;
     filtrarProductos(categoriaSeleccionada);
 });
 
-// Filtrar inicialmente los productos mostrando todos
 filtrarProductos('todos');

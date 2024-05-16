@@ -1,66 +1,67 @@
+.fila-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.columna-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloFooter{
+    color: #FC636A;
+    font-size: 17px;
+    font-weight: 600;
+}
+
 .footer{
-    background-color: white;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-weight: 500;
-    padding-top: 3rem;
-    gap: 2rem;
-    margin-bottom: 0;
-    z-index: -1;
+font-family:'Roboto', Courier, monospace;
+background-color: #F0EFEF;
 }
 
-.links a {
-    text-decoration: none;
+.subitutloFotoer{
+    font-size: 16px;
     color: black;
-    font-family: Montserrat;
-    
+    text-decoration: none;
+    margin-bottom: 6px;
 }
 
-.links ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.links li {
-    list-style: none;
-}
-
-.copyright {
-    font-family: Montserrat;
-    font-weight: bold;
-}
-
-.copyright p {
-    padding-bottom: 0;
+.text-zocalo{
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    background: #80D19B;
 }
 
-.footer-circle {
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    bottom: -120px;
-    z-index: -1;
-    background-color: var(--primary-color);
-    border-radius: 50% 50% 0 0;
-    border: rgba(48,19,1,255) solid 4px;   
-}
+@media only screen and (max-width: 714px) {
+ 
+    .fila-footer{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 2rem; 
+    }
 
-.footer-floating {
-    position: absolute;
-    width: 300px;
-    height: auto;
-    bottom: 0;
-    left: 0;
-    transform: translate(0%,0%);
-    z-index: 1;
-}
-.logo-footer img {
-    max-width: 10rem;
-    margin: 2rem;
-    z-index: 1;
+    .columna-footer{
+        margin-left:2rem;
+    }
+
+    .imagenFooter{
+        margin: auto;
+    }
+
+    .text-zocalo{
+        text-align: center;
+    }
+ 
 }
