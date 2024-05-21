@@ -8,4 +8,51 @@
 @import 'hero.css';
 @import 'features.css';
 @import 'footer.css';
-@import 'form.css'
+@import 'form.css';
+
+
+.salud-container  img{
+    width: 40%;
+}
+
+.salud-subcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.salud-container button{
+    background: #FC636A;
+    color: white;
+    border: none;
+}
+
+.salud-container button:hover{
+    color: white;
+}
+
+.salud-container > h2{
+    max-width: 100% !important;
+    width: max-content;
+    font-size: 2rem;
+    font-family: 'Roboto', ui-monospace;
+}
+
+.hero-content{
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .salud-subcontainer {
+        flex-direction: column;
+    }
+
+    .salud-container  img{
+        display: none;
+    }
+
+    .salud-container > h2{
+        width: 85%;
+    }
+}
