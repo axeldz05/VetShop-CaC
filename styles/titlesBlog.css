@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.blogTitles{
+    text-align: center;
+    padding: 1rem;
+    font-size: 34px;
+    font-family: 'Montserrat';
+    
+    position: relative;
+    padding-bottom: 10px; 
+}
+
+.blogTitles::after {
+    
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px; 
+    transform: translateX(-50%);
+    width: 60%; 
+    height: 2px; 
+    background-color: black; 
+    }
