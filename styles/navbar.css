@@ -3,7 +3,6 @@ header {
     top: 0;
     width: 100%;
     background-color: #80d19b;
-    border-bottom: 1px solid #6ca46b;
     z-index: 999;
   }
 
@@ -45,7 +44,6 @@ header {
     padding: 2px;
  }
   nav {
-    margin-left: 25%;
     justify-content: space-between;
     align-items: center;
     white-space: nowrap;
@@ -165,7 +163,16 @@ header {
   }
   
 
+  @media screen and (max-width: 719px) {
 
+  
+    header {
+      width: 100%;
+    }
+    .busqueda {
+      display: none;
+    }
+}
   @media screen and (min-width: 720px) {
 
   
@@ -179,11 +186,6 @@ header {
     header {
       width: 100%;
     }
-  
-    .logo {
-      width: 7.5rem;
-    }
-  
  
   }
   
@@ -196,6 +198,7 @@ header {
   
     nav {
       justify-content: space-between;
+      
     }
   
     nav > a {
@@ -203,14 +206,14 @@ header {
     }
   
     .nav-menu {
+      width: 100%;
       position: static;
-      width: 30%;
-      height: auto;
-      justify-self: flex-end;
+      height: 2rem;
+      margin: 0;
+      justify-content: center;
       flex-direction: row;
-      gap: 5.5rem;
-  
-      background: none;
+      gap: 3rem;
+      background: #96edb5;
     }
   
     .hamburger {
