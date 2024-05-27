@@ -1,7 +1,7 @@
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
+    padding-top: 0.1rem;
     background-color: #80d19b;
     border-bottom: 1px solid #6ca46b;
     z-index: 999;
