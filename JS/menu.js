@@ -1,14 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var menuIcon = document.getElementById('menuIcon');
-    var menuItems = document.querySelector('.menu-items');
+const menuBtn = document.querySelector('.hamburger');
+const menuBar = document.querySelector('.menu-bar');
+const menuList = document.querySelector('.nav-menu');
 
-    menuIcon.addEventListener('click', function() {
-        if (menuItems.style.display === 'none' || menuItems.style.display === '') {
-            menuItems.style.display = 'flex';
-            menuItems.style.wrap = 'nowrap';
-            menuItems.style.direction = 'column';
-        } else {
-            menuItems.style.display = 'none';
-        }
-    });
-});
+menuBtn.addEventListener('click', showMenu);
+
+function showMenu(){
+    menuBtn.classList.toggle('is-active');
+    menuBar.classList.toggle('is-active');
+    menuList.classList.toggle('is-active');
+}
